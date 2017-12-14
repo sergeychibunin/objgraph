@@ -933,7 +933,7 @@ def _gradient(start_color, end_color, depth, max_depth):
         return start_color
     h1, s1, v1 = start_color
     h2, s2, v2 = end_color
-    f = float(depth) / max_depth
+    f = float(depth) / int(max_depth)
     h = h1 * (1-f) + h2 * f
     s = s1 * (1-f) + s2 * f
     v = v1 * (1-f) + v2 * f
